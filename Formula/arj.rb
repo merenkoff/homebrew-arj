@@ -1,12 +1,10 @@
 class Arj < Formula
-  desc "ARJ-compatible archive utility for macOS (ARJ.swift)"
+  desc "Archive utility compatible with ARJ format for macOS"
   homepage "https://github.com/merenkoff/ARJ.swift"
   url "https://github.com/merenkoff/ARJ.swift/archive/refs/tags/1.1.0.tar.gz"
   sha256 "d4c6a766c0d9657cf58035fdcde8d1531bbc10df56069adcb03b711b1b801a31"
-  license "OwnNet Source License 1.0"
-  version "1.1.0"
+  license :cannot_represent
 
-  depends_on xcode: ["15.0", :build]
   depends_on :macos
 
   def install
@@ -15,6 +13,6 @@ class Arj < Formula
   end
 
   test do
-    assert_match "arj", shell_output("#{bin}/arj --help", 0)
+    assert_match "arj", shell_output("#{bin}/arj --help")
   end
 end
