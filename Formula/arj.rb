@@ -8,7 +8,7 @@ class Arj < Formula
   depends_on :macos
 
   def install
-    system "swift", "build", "-c", "release", "--product", "arj"
+    system "swift", "build", "--disable-sandbox", "-c", "release", "--product", "arj"
     bin.install ".build/release/arj"
   end
 
