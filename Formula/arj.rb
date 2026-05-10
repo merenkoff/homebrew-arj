@@ -4,6 +4,7 @@ class Arj < Formula
   url "https://github.com/merenkoff/ARJ.swift/archive/refs/tags/1.1.2.tar.gz"
   sha256 "16e5410e027a01d71e6e1e66d730a0edf2e0fc9235ab7a26a811b8899cf483b9"
   license "OwnNet Source License 1.0"
+  version "1.1.2"
 
   depends_on :macos
 
